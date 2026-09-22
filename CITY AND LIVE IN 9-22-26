@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        double price = 20.30;
+    int age = 20;
+    float weight = 70.6f;
+    char grade = 'A';
+    boolean isStudent = true;
+    String name = "Alice";
+
+    System.out.println("Name: " + name);// Alice
+    System.out.println("Age: " + age);// 20
+    System.out.println("Price: " + price);// 20.30
+    System.out.println("Weight: " + weight);// 70.60
+    System.out.println("Grade: " + grade);// A
+    System.out.println("Is Student? " + isStudent);//True
+
+    System.out.print("\nEnter your city: ");
+    String userCity = scanner.nextLine();
+    System.out.println("You live in: "+ userCity);
+
+    scanner.nextLine();
+        
+    System.out.print("Enter a sentence about yourself: ");
+    String fullSentence = scanner.nextLine();
+    System.out.println("You said: "+ fullSentence);
+
+    scanner.close();
+        }
+}
